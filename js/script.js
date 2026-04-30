@@ -11,9 +11,7 @@ const atmImages = {
 let audioContext;
 
 /*
-  AudioContext API version:
-  This does not need Howler.js or mp3 files.
-  It generates small ATM-style sounds directly in the browser.
+  AudioContext Function
 */
 function getAudioContext() {
   if (!audioContext) {
@@ -63,9 +61,9 @@ function updateStatusPanel(deviceName, status) {
   statusTitle.textContent = deviceName + " is " + status.toUpperCase();
 
   if (status === "online") {
-    statusMessage.textContent = "This ATM is available and ready for customer transactions.";
+    statusMessage.textContent = "This ATM is available and fully operational.";
   } else {
-    statusMessage.textContent = "This ATM is currently offline and may require maintenance.";
+    statusMessage.textContent = "This ATM is currently offline or requires maintenance.";
   }
 }
 
