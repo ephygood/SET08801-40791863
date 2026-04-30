@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATM Device Checker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="nav-button active" href="index.html">Home</a>
+    <a class="nav-button" href="about.html">About Project</a>
+  </nav>
+
+  <main class="page-wrapper">
+    <section class="hero-section">
+      <h1>ATM Device Status Checker</h1>
+      <p>Click an ATM device to check whether it is online or offline.</p>
+    </section>
+
+    <section class="status-panel" aria-live="polite">
+      <h2 id="status-title">No ATM selected</h2>
+      <p id="status-message">Choose one of the ATM devices below to view its current status.</p>
+    </section>
+
+    <section class="device-container" aria-label="ATM devices">
+      <button class="device" type="button" data-name="ATM-1">
+        <img src="images/atm-sign.svg" alt="ATM-1 status icon" class="device-image">
+        <span class="device-name">ATM-1</span>
+        <span class="device-status">Click to check</span>
+      </button>
+
+      <button class="device" type="button" data-name="ATM-2">
+        <img src="images/atm-sign.svg" alt="ATM-2 status icon" class="device-image">
+        <span class="device-name">ATM-2</span>
+        <span class="device-status">Click to check</span>
+      </button>
+
+      <button class="device" type="button" data-name="ATM-3">
+        <img src="images/atm-sign.svg" alt="ATM-3 status icon" class="device-image">
+        <span class="device-name">ATM-3</span>
+        <span class="device-status">Click to check</span>
+      </button>
+
+      <button class="device" type="button" data-name="ATM-4">
+        <img src="images/atm-sign.svg" alt="ATM-4 status icon" class="device-image">
+        <span class="device-name">ATM-4</span>
+        <span class="device-status">Click to check</span>
+      </button>
+
+      <button class="device" type="button" data-name="ATM-5">
+        <img src="images/atm-sign.svg" alt="ATM-5 status icon" class="device-image">
+        <span class="device-name">ATM-5</span>
+        <span class="device-status">Click to check</span>
+      </button>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
